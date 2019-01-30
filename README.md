@@ -1,2 +1,2 @@
 # BaiduAPI
-Project of using Baidu translation API
+Project of learning/using Baidu translation API
