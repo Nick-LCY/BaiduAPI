@@ -1,7 +1,6 @@
 package me.nick_lin.test_baidu_api.Services;
 
 import org.apache.commons.codec.digest.DigestUtils;
-import org.json.JSONObject;
 import org.springframework.http.*;
 import org.springframework.web.client.RestTemplate;
 
@@ -12,8 +11,7 @@ public class TranslationService {
     private static final String KEY = "ESNjoHkfCACmfsFqY8e6";
 
     public static String translate(String query, String from, String to) {
-        JSONObject response = new JSONObject();
-        String finalURL = "";
+        String finalURL;
 
         //Generate a random number
         int salt = getRandom();
@@ -35,7 +33,7 @@ public class TranslationService {
     }
 
     private static int getRandom() {
-        //Using Timestamp to get a random number
+        //Get a random number
         return (int) ((Math.random() + 1) * 10000);
     }
 
