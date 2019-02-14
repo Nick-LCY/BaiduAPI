@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class TranslationController {
 
     @PostMapping("/Request")
-    public JSONObject translate(@RequestParam("query") String query,
+    public String translate(@RequestParam("query") String query,
                                 @RequestParam("from") String from,
                                 @RequestParam("to") String to) {
         return TranslationService.translate(query, from, to);
