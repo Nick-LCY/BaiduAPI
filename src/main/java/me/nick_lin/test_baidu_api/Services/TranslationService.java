@@ -7,8 +7,8 @@ import org.springframework.web.client.RestTemplate;
 public class TranslationService {
 
     private static final String BAIDU_TRANS_API_URL = "https://fanyi-api.baidu.com/api/trans/vip/translate";
-    private static final long APP_ID = 20190130000260587L;
-    private static final String KEY = "ESNjoHkfCACmfsFqY8e6";
+    private static final long APP_ID = 0000000000L;
+    private static final String KEY = "Your Key";
 
     public static String translate(String query, String from, String to) {
         String finalURL;
